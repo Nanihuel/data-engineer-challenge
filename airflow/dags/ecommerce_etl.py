@@ -19,7 +19,6 @@ import logging
 from typing import List, Tuple
 from collections import defaultdict
 from datetime import date
-import logging
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
@@ -27,7 +26,6 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 from psycopg2.extras import execute_values
 import requests
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
